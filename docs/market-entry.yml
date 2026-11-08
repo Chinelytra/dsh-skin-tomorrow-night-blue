@@ -1,0 +1,14 @@
+# Entry for awesome-dsh-plugin.
+#
+# Copy this file to the registry repository as:
+#   data/plugins/Chinelytra__dsh-skin-tomorrow-night-blue.yml
+#
+# Format: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/blob/main/contributing.md
+url: https://github.com/Chinelytra/dsh-skin-tomorrow-night-blue
+name: Chinelytra/dsh-skin-tomorrow-night-blue
+category: theme
+description:
+  en: 'Tomorrow Night Blue skin for the DeepSeek Harness Web GUI: the classic deep-blue palette mapped onto 113 design tokens and 11 syntax-highlighting roles.'
+  zh: 'DeepSeek Harness 的 Tomorrow Night Blue 深蓝皮肤：把经典深蓝配色映射到 113 个设计令牌与 11 个代码高亮角色。'
+tarball: https://github.com/Chinelytra/dsh-skin-tomorrow-night-blue/releases/latest/download/dsh-skin-tomorrow-night-blue.tgz
+icon: https://raw.githubusercontent.com/Chinelytra/dsh-skin-tomorrow-night-blue/main/assets/icon-180.png

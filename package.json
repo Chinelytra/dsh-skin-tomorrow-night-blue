@@ -1,0 +1,69 @@
+{
+  "name": "dsh-skin-tomorrow-night-blue",
+  "version": "1.0.0",
+  "description": "Tomorrow Night Blue skin for the DeepSeek Harness Web GUI — the classic deep-blue palette mapped onto the DSH --dsw-alias-* token surface, with matching Shiki syntax colors.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Chinelytra",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "skin",
+    "theme",
+    "tomorrow-night-blue",
+    "tomorrow-theme",
+    "dark-theme"
+  ],
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "files": [
+    "index.js",
+    "build-client.mjs",
+    "verify.mjs",
+    "cordis.patch.yml",
+    "lib",
+    "src",
+    "docs",
+    "assets",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build-client.mjs",
+    "verify": "node verify.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chinelytra/dsh-skin-tomorrow-night-blue.git"
+  },
+  "homepage": "https://github.com/Chinelytra/dsh-skin-tomorrow-night-blue",
+  "bugs": {
+    "url": "https://github.com/Chinelytra/dsh-skin-tomorrow-night-blue/issues"
+  }
+}
