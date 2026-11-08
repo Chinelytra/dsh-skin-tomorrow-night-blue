@@ -107,6 +107,16 @@ that cascade; a theme that wants to stay configurable should use the
   layers from other skin plugins (for example `dsh-opencode-palette`). Disable
   this bundle to hand the cascade back to them.
 
+### Known limitations
+
+- The skin overrides **alias tokens** (plus the Shiki syntax roles). A few
+  auxiliary surfaces in DSH are painted from design-system **static** tokens
+  (for example some file-change/diff card headers keep a neutral dark fill) and
+  therefore stay as the stock theme draws them — the same boundary every
+  token-layer skin works within.
+- Tomorrow Night Blue is a dark palette; the skin keeps it under both
+  appearance modes by design.
+
 ## Disable / uninstall
 
 - **Settings → Plugins** → turn off or remove `dsh-skin-tomorrow-night-blue`.
